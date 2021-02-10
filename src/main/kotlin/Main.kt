@@ -13,11 +13,14 @@ fun isPrime(testNumber:Int):Boolean {
 }
 
 fun writePrimesInInterval(lower:Int, higher:Int) {
+    var counter:Int=0
     for(i in lower..higher) {
         if(isPrime(i)) {
             println(i)
+            counter++
         }
     }
+    print("Number of primes in interval "+lower+" to "+higher+": "+counter)
 }
 
 fun main() {
